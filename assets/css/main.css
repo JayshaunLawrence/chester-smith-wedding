@@ -3971,6 +3971,8 @@ input, select, textarea {
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		border: 1px; 
+  		margin: 35px;
 	}
 
 	body.is-mobile.landing #footer {
