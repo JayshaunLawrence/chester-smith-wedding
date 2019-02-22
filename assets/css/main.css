@@ -3966,10 +3966,11 @@ input, select, textarea {
 	}
 
 
-	body.is-mobile.landing {
+	body.is-mobile.landing #page-wrapper {
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-attachment: fixed;
 		border: 1px; 
 	}
 	body.is-mobile.landing #banner{
