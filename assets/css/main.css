@@ -3620,7 +3620,7 @@ input, select, textarea {
 			padding: 0.35em 1em;
 			letter-spacing: 0.225em;
 			text-transform: uppercase;
-			
+
 		}
 
 			#banner p a {
@@ -3966,7 +3966,12 @@ input, select, textarea {
 	}
 
 
-
+	body.is-mobile.landing {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border: 1px; 
+	}
 	body.is-mobile.landing #banner{
 
 		background: none;
