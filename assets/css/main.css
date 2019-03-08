@@ -2475,6 +2475,16 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+		#protected {
+			justify-content: center;
+			cursor: default;
+			height: 100vh;
+			min-height: 35em;
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+		}
+
 		@media screen and (max-width: 736px) {
 
 			#banner {
