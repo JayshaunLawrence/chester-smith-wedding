@@ -27,13 +27,21 @@
         <div class="inner">
             <header class="major">
                 <h2>Protected Page</h2>
-                <p >Please enter passphrase
+                <p >Please enter passphrase </p>
+                <h6 id=wrong-password> </h6>
                 <form id="staticrypt-form" action="#" method="post">
-                    <input id="staticrypt-password"
+                    <input onclick="myFunction()" id="staticrypt-password"
                            type="password"
                            name="password"
                            placeholder="passphrase"
                            autofocus/>
+
+                    <script>
+						function myFunction() {
+	            			var x = document.getElementById("wrong-password");
+							x.innerHTML = "";
+						}
+					</script>
 
                     <input type="submit" class="staticrypt-decrypt-button" value="Enter"/>
                  </form>
@@ -6058,7 +6066,8 @@
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
 
         if (decryptedHMAC !== encryptedHMAC) {
-            alert('Incorrect passphrase!');
+            var x = document.getElementById("wrong-password");
+			x.innerHTML = "Incorrect passphrase";
             return;
         }
 

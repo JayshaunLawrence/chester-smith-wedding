@@ -2484,6 +2484,9 @@ input, select, textarea {
 			position: relative;
 			text-align: center;
 		}
+		#protected h6 {
+					color:  red;
+				}
 
 		@media screen and (max-width: 736px) {
 
